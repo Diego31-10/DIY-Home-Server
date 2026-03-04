@@ -1,4 +1,6 @@
-# 🖥 DIY Home Server
+<h1 align="center">
+🖥 DIY Home Server
+</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Research%20Phase-blue" />
