@@ -51,33 +51,48 @@ The architecture is designed to be hardware-agnostic so others can adapt it to t
 ## 🧠 Core Use Cases
 
 ### ☁️ 1. Personal Cloud
-- Self-hosted storage
-- Encrypted remote access
-- Automated backups
+- Self-hosted file storage
+- Secure remote access
+- Automated backups and synchronization
+- Cross-device file access
 
 ### 🤖 2. AI Infrastructure
 - Local LLM deployment
-- GPU-based inference
-- Model experimentation
-- Private AI assistant
+- GPU-accelerated inference
+- Model experimentation and benchmarking
+- Private AI assistant environment
 
 ### 🧩 3. Development Lab
 - Containerized services
 - API hosting
-- Microservices architecture
+- Microservices experimentation
 - Database hosting
+- Local staging environments
 
-### 📊 4. Monitoring & Control
-- Real-time CPU/GPU/RAM tracking
-- Mobile-based remote administration
-- Automated alerts
+### 🖥 4. Infrastructure & Virtualization
+- Service isolation with containers
+- Virtual machines for testing environments
+- Infrastructure experimentation
+- Network service deployment
 
-### 🌐 5. Networking & Security
+### 📊 5. Monitoring & Observability
+- Real-time CPU / GPU / RAM monitoring
+- System metrics dashboards
+- Log aggregation
+- Automated alerts and system health checks
+
+### 🌐 6. Networking & Security
 - VPN-secured remote access
 - SSH key authentication
-- Reverse proxy configuration
+- Reverse proxy and internal routing
 - Firewall hardening
+- Secure service exposure
 
+### ⚙️ 7. Automation & DevOps
+- Infrastructure defined with configuration files
+- Automated service deployment
+- Backup automation
+- Continuous experimentation environment
 ---
 
 ## 🏗 Architectural Goals
