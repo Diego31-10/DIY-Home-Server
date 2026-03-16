@@ -33,7 +33,7 @@ DIY Home Server is an open initiative focused on:
 - 🔐 Implementing secure-by-default systems  
 - 📚 Documenting the entire process for replication  
 
-The long-term goal is to transform consumer hardware (old laptops, phones, etc.) into a modular and scalable self-hosted environment.
+The long-term goal is to transform consumer hardware (old laptops, desktops, and other unused devices) into a modular and scalable self-hosted environment.
 
 ---
 
@@ -42,7 +42,7 @@ The long-term goal is to transform consumer hardware (old laptops, phones, etc.)
 | Device | Purpose |
 |--------|----------|
 | Laptop (i7, 16GB RAM, RTX GPU) | Main server node |
-| Android phone | Monitoring & remote control interface |
+| MacBook (personal) | OpenClaw companion node — voice, canvas, and messaging interface |
 
 The architecture is designed to be hardware-agnostic so others can adapt it to their own devices.
 
@@ -93,6 +93,16 @@ The architecture is designed to be hardware-agnostic so others can adapt it to t
 - Automated service deployment
 - Backup automation
 - Continuous experimentation environment
+
+### 🧠 8. Personal AI Assistant with OpenClaw
+- **[OpenClaw](https://github.com/OpenClaw/OpenClaw)** is a self-hosted personal AI assistant running as a daemon on the home server
+- Gateway deployed on the server via systemd, keeping it always-on without depending on any cloud service
+- Connects to messaging channels already in use: WhatsApp, Telegram, Discord, Slack, Signal, iMessage, and more
+- Personal MacBook serves as a companion node: provides voice wake words, Talk Mode, and the Live Canvas visual workspace
+- All AI inference and routing is handled locally — private by design, no third-party data exposure
+- Multi-model support: plug in OpenAI, local LLMs, or any configured model provider
+- Secured with DM pairing policies so only approved contacts can interact with the assistant
+
 ---
 
 ## 🏗 Architectural Goals
@@ -126,6 +136,7 @@ This project aims to:
 - [ ] Deploy AI models with GPU acceleration
 - [ ] Implement monitoring dashboard
 - [ ] Automate backups
+- [ ] Deploy and configure OpenClaw Gateway as a systemd service
 - [ ] Publish full replication guide
 
 ---
