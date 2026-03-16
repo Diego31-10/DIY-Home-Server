@@ -42,7 +42,7 @@ The long-term goal is to transform consumer hardware (old laptops, desktops, and
 | Device | Purpose |
 |--------|----------|
 | Laptop (i7, 16GB RAM, RTX GPU) | Main server node |
-| MacBook (personal) | Remotely controlled client via OpenClaw |
+| MacBook (personal) | OpenClaw companion node — voice, canvas, and messaging interface |
 
 The architecture is designed to be hardware-agnostic so others can adapt it to their own devices.
 
@@ -94,12 +94,14 @@ The architecture is designed to be hardware-agnostic so others can adapt it to t
 - Backup automation
 - Continuous experimentation environment
 
-### 🖱 8. Remote Desktop Control with OpenClaw
-- **OpenClaw** is the core software used to remotely control the personal MacBook from the home server
-- Full desktop access and session management over the local network or VPN
-- Secure, low-latency remote control without relying on third-party cloud services
-- Enables working on the MacBook from any device connected to the home server network
-- Centralized control hub: manage, monitor, and operate the MacBook directly from the server infrastructure
+### 🧠 8. Personal AI Assistant with OpenClaw
+- **[OpenClaw](https://github.com/OpenClaw/OpenClaw)** is a self-hosted personal AI assistant running as a daemon on the home server
+- Gateway deployed on the server via systemd, keeping it always-on without depending on any cloud service
+- Connects to messaging channels already in use: WhatsApp, Telegram, Discord, Slack, Signal, iMessage, and more
+- Personal MacBook serves as a companion node: provides voice wake words, Talk Mode, and the Live Canvas visual workspace
+- All AI inference and routing is handled locally — private by design, no third-party data exposure
+- Multi-model support: plug in OpenAI, local LLMs, or any configured model provider
+- Secured with DM pairing policies so only approved contacts can interact with the assistant
 
 ---
 
@@ -134,7 +136,7 @@ This project aims to:
 - [ ] Deploy AI models with GPU acceleration
 - [ ] Implement monitoring dashboard
 - [ ] Automate backups
-- [ ] Set up OpenClaw for remote MacBook control
+- [ ] Deploy and configure OpenClaw Gateway as a systemd service
 - [ ] Publish full replication guide
 
 ---
