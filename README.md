@@ -33,7 +33,7 @@ DIY Home Server is an open initiative focused on:
 - 🔐 Implementing secure-by-default systems  
 - 📚 Documenting the entire process for replication  
 
-The long-term goal is to transform consumer hardware (old laptops, phones, etc.) into a modular and scalable self-hosted environment.
+The long-term goal is to transform consumer hardware (old laptops, desktops, and other unused devices) into a modular and scalable self-hosted environment.
 
 ---
 
@@ -42,7 +42,7 @@ The long-term goal is to transform consumer hardware (old laptops, phones, etc.)
 | Device | Purpose |
 |--------|----------|
 | Laptop (i7, 16GB RAM, RTX GPU) | Main server node |
-| Android phone | Monitoring & remote control interface |
+| MacBook (personal) | Remotely controlled client via OpenClaw |
 
 The architecture is designed to be hardware-agnostic so others can adapt it to their own devices.
 
@@ -93,6 +93,14 @@ The architecture is designed to be hardware-agnostic so others can adapt it to t
 - Automated service deployment
 - Backup automation
 - Continuous experimentation environment
+
+### 🖱 8. Remote Desktop Control with OpenClaw
+- **OpenClaw** is the core software used to remotely control the personal MacBook from the home server
+- Full desktop access and session management over the local network or VPN
+- Secure, low-latency remote control without relying on third-party cloud services
+- Enables working on the MacBook from any device connected to the home server network
+- Centralized control hub: manage, monitor, and operate the MacBook directly from the server infrastructure
+
 ---
 
 ## 🏗 Architectural Goals
@@ -126,6 +134,7 @@ This project aims to:
 - [ ] Deploy AI models with GPU acceleration
 - [ ] Implement monitoring dashboard
 - [ ] Automate backups
+- [ ] Set up OpenClaw for remote MacBook control
 - [ ] Publish full replication guide
 
 ---
